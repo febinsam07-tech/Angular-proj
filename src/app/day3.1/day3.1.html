@@ -1,0 +1,65 @@
+<p>day3.1 works!</p>
+
+<h1>Control Statement</h1>
+<!-- 
+<h4>1. IF</h4>
+
+@if(time < 12)
+{
+    <p>GOOD MRNG</p>
+}
+@else if(time >= 12 && time < 17)
+{
+    <p>GOOD AFTERNOON</p>
+}
+@else
+{
+    <p>GOOD EVNRG</p>
+} -->
+<!-- ======================================================= -->
+
+<br><br><br>
+
+<h2>for</h2>
+<br>
+<br>
+<h3>ordered list</h3>
+<ol>
+    @for (place of places ;track $index)
+    {
+        <li> {{ place }}</li>
+    }
+</ol>
+
+<h3>unordered list</h3>
+
+<ul>
+    @for (p of places ;track $index)
+    {
+        <li> {{ p }}</li>
+    }
+</ul>
+<br>
+<br>
+<br>
+<table border="3px">
+    <thead>
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for ( s of student ; track s.id  )
+        {
+            <tr>
+                <td>qwe {{ $index+1 }}</td>
+                <td> {{ s.name }}</td>
+                <td> {{ s.age }}</td>
+                <td> {{ s.grade }}</td>
+            </tr>
+        }   
+    </tbody>
+</table>

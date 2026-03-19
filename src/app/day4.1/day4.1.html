@@ -1,0 +1,93 @@
+<p>day4.1 works!</p>
+
+<h1 style="background-color: cyan; color: orangered;">BUILD-IN PIPES</h1>
+
+<h2>EMPOLYEE DETAILS</h2>
+<p>Name :{{ emp.name }}</p>
+<p>DOB :{{ emp.dob }}</p>
+<p>Salary :{{ emp.salary }}</p>
+
+
+<hr><hr>
+<br>
+<br>
+<br>
+<h4> {{ emp.name|json }}</h4>
+
+<br>
+<hr>
+<hr>
+<br>
+
+<h4> {{ emp.name|uppercase }}</h4>
+
+<br>
+<hr>
+<hr>
+<br>
+
+<h4> {{ emp.name|lowercase }}</h4>
+
+<br>
+<hr>
+<hr>
+<br>
+
+<h4> {{ emp.salary|currency }}</h4>
+
+<br>
+<hr>
+<hr>
+<br>
+
+<h4> {{ emp.salary|currency:'INR' }}</h4>
+
+<hr>
+<hr>
+<br>
+
+<h4> {{ emp.salary|currency:'INR':'code' }}</h4>
+
+<hr>
+<hr>
+<br>
+
+<h4> {{ emp.salary|currency:'INR':'code' }}</h4>
+
+<hr>
+<hr>
+<br>
+
+<h4> {{ emp.dob }}</h4>
+
+<hr>
+<hr>
+<br>
+
+<h4> {{ emp.dob|date }}</h4>
+
+<hr>
+<hr>
+<br>
+
+<h4> {{ emp.dob|date:'dd-mm-yyyy' }}</h4>
+
+<hr>
+<hr>
+<br>
+
+<h4> {{ emp.dob|date:'dd MMMM yy' }}</h4>
+
+<hr>
+<hr>
+<br>
+
+<h4> {{ emp.dob|date:'MMMM'|uppercase }}</h4>
+
+<br>
+<hr>
+<hr>
+<br>
+
+<h4 style="background-color: rgb(5, 5, 6); color: cornsilk;"> {{ emp.name|one:"ZREES" }}</h4>
+

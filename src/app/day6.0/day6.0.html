@@ -1,0 +1,15 @@
+<p>day6.0 works! Todo list</p>
+
+<br>
+<br>
+<h2>ToDo List</h2>
+<hr>
+
+<form #myform="ngForm" (ngSubmit)="create(myform.value)">
+    <label for="">title</label>
+  
+    <input type="text" name="title" ngModel    >
+    <!-- <input type="text" name="title11" > -->
+    <input type="submit" value="SUBMIT" [disabled]="myform.invalid">
+
+</form>

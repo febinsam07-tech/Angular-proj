@@ -1,0 +1,17 @@
+<p>day6 works!</p>
+<form #myform="ngForm" (ngSubmit)="register(myform.value)">
+    <label for="">Enter Name</label>
+    <input type="text" name="firstname" ngModel #fname=ngModel required
+    [class.err]="fname.invalid &&  fname.touched"> <br>
+
+    <label for="">Enter Email</label>
+    <input type="email" name="email" ngModel #email=ngModel required> <br>
+
+    <label for="">Enter Number</label>
+    <input type="number" name="num" ngModel #phone=ngModel required> <br>
+
+    <input type="submit" value="SUBMIT" [disabled]="myform.invalid">
+
+
+
+</form>

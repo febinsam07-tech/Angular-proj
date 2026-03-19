@@ -1,0 +1,22 @@
+<p>day3 works!</p>
+
+<h2 style="background-color: aquamarine; color: brown;">TWO WAY DATABINDING</h2>
+<br>
+
+<h5>method 1</h5>
+
+<h2> {{ changetext }}</h2>
+
+<input type="text" [value]="changetext" (input)="changetext=$event.target.value">
+
+<br><br>
+
+<h5> method 2</h5>
+
+<br><br>
+
+<h2>{{ newtext }}</h2>
+
+<input type="text" [(ngModel)]="newtext" name="newtext" style="background-color: aqua;">
+
+<br><br><br>
